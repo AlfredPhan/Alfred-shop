@@ -1,0 +1,38 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* 100% = 16px 
+       1rem = 16px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    /* sans-serif là chủng chữ ko có chân */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+
+/* Những thẻ nằm trong class này đều nằm ngang
+    Tổng độ dài của con sẽ nhảy xuống hàng */
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
