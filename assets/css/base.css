@@ -1,8 +1,8 @@
 :root {
+    --primary-color: #EE4D2D;
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-
 }
 
 * {
@@ -20,7 +20,7 @@ html {
 }
 
 .grid {
-    width: 1200px;
+    width: 1456px;
     max-width: 100%;
     margin: 0 auto;
 }
