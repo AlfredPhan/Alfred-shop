@@ -275,10 +275,7 @@
     overflow: hidden;
     background-color: var(--white-color);
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> c9dd8ea36accff0e6f23d03feaf9f16b75430480
 .auth-form__container {
     padding: 0 32px;
 }
@@ -304,13 +301,7 @@
     cursor: pointer;
 }
 
-<<<<<<< HEAD
 .auth-form__form {}
-=======
-.auth-form__form {
-    
-}
->>>>>>> c9dd8ea36accff0e6f23d03feaf9f16b75430480
 
 .auth-form__input {
     width: 100%;
@@ -355,11 +346,7 @@
 }
 
 .auth-form__controls-back:hover {
-<<<<<<< HEAD
     background-color: #d7dbd8;
-=======
-    background-color:#d7dbd8 ;
->>>>>>> c9dd8ea36accff0e6f23d03feaf9f16b75430480
 }
 
 .auth-form__socials {
@@ -413,7 +400,6 @@
 
 .auth-form__help-forgot {
     color: var(--primary-color);
-<<<<<<< HEAD
 }
 
 /* Header search */
@@ -510,6 +496,3 @@
 
 }
 
-=======
-}
->>>>>>> c9dd8ea36accff0e6f23d03feaf9f16b75430480
