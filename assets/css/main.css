@@ -30,7 +30,7 @@
     position: relative;
 }
 
-.header__navbar-user-img{
+.header__navbar-user-img {
     width: 22px;
     height: 22px;
     border-radius: 50%;
@@ -38,9 +38,9 @@
 }
 
 .header__navbar-user-name {
-    margin-left: 8px;
+    margin-left: 4px;
     font-size: 1.6rem;
-    font-weight: 200;
+    font-weight: 400;
 }
 
 .header__navbar-user:hover .header__navbar-user-menu {
@@ -66,7 +66,7 @@
     content: "";
     border-width: 20px 27px;
     border-style: solid;
-    border-color: transparent transparent  var(--white-color);
+    border-color: transparent transparent var(--white-color);
     position: absolute;
     right: 4px;
     top: -29px;
@@ -83,8 +83,10 @@
     height: 8px;
 }
 
-.header__navbar-user-item {
+.header__navbar-user-item {}
 
+.header__navbar-user-item--separate {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header__navbar-user-item a {
@@ -117,7 +119,7 @@
 .header__navbar-item,
 .header__navbar-item-link {
     display: inline-block;
-    font-size: 20px;
+    font-size: 1.3rem;
     color: var(--white-color);
     text-decoration: none;
     font-weight: 300;
@@ -163,6 +165,10 @@
 .header__navbar-icon-link {
     color: var(--white-color);
     text-decoration: none;
+}
+
+.header__navbar-icon-link:nth-child(2) {
+    margin-left: 3px;
 }
 
 .header__navbar-icon {
@@ -229,14 +235,16 @@
 /* Header noti */
 .header__noti {
     position: absolute;
+    z-index: 1;
     top: 200%;
     right: 0;
     width: 404px;
-    border: 1px solid #D3D3D3;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: var(--white-color);
     cursor: default;
     /* Chuyển hướng của cái tâm */
-    transform-origin: calc(100% - 20px) top;
+    transform-origin: calc(100% - 32px) top;
     /* Có những trình duyệt ko hỗ trợ animation này phải code ra chi tiết như sau:
     -webkit-animation: headerNotiGrowth ease-in 0.2s; Chrome
     -ms-animation: headerNotiGrowth ease-in 0.2s; IE
@@ -510,6 +518,11 @@
     width: 200px;
 }
 
+.header__logo-link {
+    color: transparent;
+    text-decoration: none;
+}
+
 .header__logo-img {
     width: 150px;
 }
@@ -774,7 +787,7 @@
 .header__search-option {
     position: absolute;
     right: 0;
-    top: 100%;
+    top: calc(100% - 1px);
     width: 130px;
     list-style: none;
     box-shadow: 0 1px 2px #e0e0e0;
