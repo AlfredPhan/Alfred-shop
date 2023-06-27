@@ -166,6 +166,7 @@ html {
     align-items: center;
     background-color: var(--white-color);
     position: relative;
+    z-index: 1;
 }
 
 .select-input__label {
@@ -205,4 +206,43 @@ html {
 
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+/* pagnination */
+.pagnination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagnination-item {
+    margin: 0 12px;
+}
+
+.pagnination-item--active .pagnination-item__link {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.pagnination-item--active .pagnination-item__link:hover {
+    background-color: #ee684d;
+}
+
+.pagnination-item__link {
+    --height: 30px;
+    display: block;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    /* Cho bằng với chiều cao */
+    line-height: var(--height);
+}
+
+.pagnination-item__icon {
+
 }
